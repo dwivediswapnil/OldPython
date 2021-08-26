@@ -1,0 +1,63 @@
+1.Write a Python Program to Check if a Number is Positive, Negative or Zero?
+Ans:
+num = float(input("Enter the number"))
+if num>0:
+    print("Positive number")
+elif num==0:
+    print("Zero number")
+else:
+    print("Negative number")
+==============================================================================
+2:Write a Python Program to Check if a Number is Odd or Even?
+Ans:
+num = float(input("enter the number: "))
+if num%2==0:
+    print("even number")
+else:
+    print("odd number")
+===============================================================================
+3.Write a Python Program to Check Leap Year?
+Ans: 
+year = int(input("Enter the year: "))
+if(year%4==0 and year%100!=0):
+    print(year,"Leap year")
+elif(year%100==0):
+    print(year,"is not a leap year")
+elif(year%400==0):
+    print(year,"is a leap year")
+else:
+    print(year,"is not a leap year")
+=================================================================================
+4.Write a Python Program to Check Prime Number?
+Ans:
+# Taking the input from User 
+number = int(input("Enter The Number"))
+
+if number > 1:
+    for i in range(2,int(number/2)+1):
+        if (number % i == 0):
+            print(number, "is not a Prime Number")
+            break
+    else:
+        print(number,"is a Prime number")
+# If the number is less than 1 it can't be Prime    
+else:
+    print(number,"is not a Prime number") 
+=================================================================================
+5.Write a Python Program to Print all Prime Numbers in an Interval of 1-10000?
+Ans:
+#Taking the input from the user
+lower=1
+upper=1000
+print("printing prime numbers between",lower,"and",upper)
+for nu in range(lower,upper+1):
+    if nu>1:
+        for i in range(2,nu):
+            if(nu%i==0):
+                print(nu,"is not prime")
+                break
+        else:
+                print(nu,"is prime")
+    else:
+        print(nu, "not a prime number")
+=================================================================================
